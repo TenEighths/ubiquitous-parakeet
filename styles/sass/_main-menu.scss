@@ -1,0 +1,14 @@
+.main-menu {
+    width: 300px;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-container {
+    border-right: 2px solid black;
+    position: fixed;
+    height: 100vh;
+    width: 200px; 
+    padding-top: 100px;
+}
