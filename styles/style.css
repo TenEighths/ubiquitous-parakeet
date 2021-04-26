@@ -261,6 +261,11 @@ h2 {
   text-transform: uppercase;
 }
 
+nav {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 ul {
   list-style-type: none;
   padding-left: 0;
@@ -284,7 +289,9 @@ main {
 }
 
 .main-menu {
-  width: 300px;
+  max-width: 400px;
+  height: 100vh;
+  width: 90%;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
@@ -295,25 +302,34 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-right: 2px solid black;
+  position: fixed;
+  z-index: 10;
 }
 
 .menu-container {
-  border-right: 2px solid black;
-  position: fixed;
-  height: 100vh;
-  width: 200px;
-  padding-top: 100px;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  padding-top: 175px;
 }
 
 .main-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow-x: hidden;
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 
 .content-display {
   width: 70%;
   height: auto;
+  position: relative;
+  padding-left: 300px;
 }
 
 .home {
@@ -385,5 +401,50 @@ main {
   100% {
     border-radius: 50%;
   }
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.about-desc-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-left {
+  width: 46%;
+  margin: 2%;
+}
+
+.about-right {
+  width: 46%;
+  margin: 2%;
+  text-align: right;
+}
+
+.portfolio {
+  margin: 2%;
+}
+
+.portfolio-nav nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio-nav nav li {
+  padding-right: 15px;
+}
+
+.portfolio-nav nav li:first-child {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.portfolio-img {
+  display: -ms-grid;
+  display: grid;
 }
 /*# sourceMappingURL=style.css.map */

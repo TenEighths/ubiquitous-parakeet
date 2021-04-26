@@ -1,0 +1,22 @@
+.portfolio {
+    margin: 2%;
+}
+
+.portfolio-nav {
+    nav {
+        display: flex;
+        li {
+            padding-right: 15px;
+        }
+        li:first-child {
+            font-weight: 700;
+            font-size: 20px;
+        }
+    }
+}
+
+// gotta set up the grid
+.portfolio-img {
+    display: grid;
+}
+
