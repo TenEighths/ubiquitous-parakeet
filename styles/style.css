@@ -301,7 +301,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-right: 2px solid black;
+  border-right: 2px solid lightgray;
   position: fixed;
   z-index: 10;
 }
@@ -552,5 +552,18 @@ main {
   .home-content-container {
     padding-top: 300px;
   }
+}
+
+footer {
+  background-color: lightgray;
+}
+
+footer div {
+  padding: 25px;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
