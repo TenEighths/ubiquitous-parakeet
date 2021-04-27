@@ -283,15 +283,14 @@ main {
 }
 
 .wrapper {
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 90%;
 }
 
 .main-menu {
-  max-width: 400px;
+  max-width: 300px;
   height: 100vh;
-  width: 90%;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
@@ -308,28 +307,27 @@ main {
 }
 
 .menu-container {
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
   height: auto;
   padding-top: 175px;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
 }
 
 .main-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: hidden;
-  width: 100%;
   height: auto;
   position: relative;
 }
 
 .content-display {
-  width: 70%;
-  height: auto;
-  position: relative;
-  padding-left: 300px;
+  margin-left: 350px;
 }
 
 .home {
@@ -443,8 +441,27 @@ main {
   font-size: 20px;
 }
 
-.portfolio-img {
+.portfolio-img-list {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 2fr 2fr 2fr;
+      grid-template-columns: 2fr 2fr 2fr;
+  -ms-grid-rows: 300px;
+      grid-template-rows: 300px;
+  grid-gap: 30px;
+  grid-auto-columns: 100px;
+}
+
+.portfolio-img-list li {
+  line-height: 0;
+}
+
+.portfolio-img-list li img {
+  width: 300px;
+}
+
+.grid-item-5 {
+  grid-column: 2 / -1;
+  background-color: lightgray;
 }
 /*# sourceMappingURL=style.css.map */
