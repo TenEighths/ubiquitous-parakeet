@@ -1,0 +1,26 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: lightgray;
+    display: none;
+}
+
+.mobile-menu-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.mobile-right {
+   ul {
+    display: flex; 
+    li {
+        padding: 0 15px;
+    }
+   } 
+}

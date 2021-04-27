@@ -9,12 +9,32 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
 </head>
 <body>
 
     <main>
         <div class="main-page">
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu">
+                <div class="mobile-menu-container">
+                    <div class="mobile-left">
+                        <h3>Kevin Turner</h3>
+                    </div>
+                    <div class="mobile-right">
+                        <ul>
+                            <li><a href="#home"><img class="svg" src="./styles/assests/img/home-run.svg" alt=""></a></li>
+                            <li><a href="#about"><img class="svg" src="./styles/assests/img/avatar.svg" alt=""></a></li>
+                            <li><a href="#portfolio"><img class="svg" src="./styles/assests/img/briefcase.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Main menu -->
             <div class="main-menu">
                     <div class="menu-container">
                     <h1>Kevin Turner</h1>
@@ -46,7 +66,7 @@
     
                 <!-- About -->
                 <div class="about">
-                    <div class="img-container">
+                    <div class="img-container wrapper">
                         <img src="./styles/assests/img/palceholder-large.jpg" alt="">
                     </div>
                     <div class="about-desc-container">
@@ -56,6 +76,7 @@
                         </div>
                         <div class="about-right">
                             <h3>About right</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iusto voluptas sequi quo facere omnis earum molestiae dignissimos illum quos explicabo aperiam nostrum, facilis voluptatum, quod aut, quis ex odio.</p>
                         </div>
                     </div>
                 </div>
@@ -65,20 +86,22 @@
                     <div class="portfolio-nav">
                         <nav>
                             <li>Portfolio</li>
-                            <li><a href="">All</a></li>
+                            <!-- I intend to make this more functional when I have more to add to my portfolio -->
+                            <!-- <li><a href="">All</a></li>
                             <li><a href="">HTML/CSS</a></li>
                             <li><a href="">Javascript/JQuery</a></li>
-                            <li><a href="">React</a></li>
+                            <li><a href="">React</a></li> -->
                         </nav>
-                        <div class="portfolio-img">
-                            <!-- gonna do grid -->
-                            <ul class="portfolio-img-list">
-                                <li><img src="./styles/assests/img/placeholder.jpg" alt=""></li>
-                                <li><img src="./styles/assests/img/placeholder.jpg" alt=""></li>
-                                <li><img src="./styles/assests/img/placeholder.jpg" alt=""></li>
-                                <li><img src="./styles/assests/img/placeholder.jpg" alt=""></li>
-                            </ul>
-                        </div>
+                    </div>
+                    <div class="portfolio-img wrapper">
+                        <!-- gonna do grid -->
+                        <ul class="portfolio-img-list">
+                            <li class="grid-item-1"><img src="./styles/assests/img/placeholder.jpg" alt=""></li>
+                            <li class="grid-item-2"><img src="./styles/assests/img/placeholder.jpg" alt=""></li>
+                            <li class="grid-item-3"><img src="./styles/assests/img/placeholder.jpg" alt=""></li>
+                            <li class="grid-item-4"><img src="./styles/assests/img/placeholder.jpg" alt=""></li>
+                            <li class="grid-item-5"><p>there will be something here</p></li>
+                        </ul>
                     </div>
                 </div>
     
@@ -86,6 +109,12 @@
             </div>
         </div>
     </main>
+
+    <footer>
+        <div class="footer">
+            <p>Contact info goes here</p>
+        </div>
+    </footer>
 
 </body>
 </html>
