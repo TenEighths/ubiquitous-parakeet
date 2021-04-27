@@ -1,0 +1,20 @@
+.img-container {
+    img {
+        width: 100%;
+    }
+}
+
+.about-desc-container {
+    display: flex;
+}
+
+.about-left {
+    width: 46%;
+    margin: 2%;
+}
+
+.about-right {
+    width: 46%;
+    margin: 2%;
+    text-align: right;
+}

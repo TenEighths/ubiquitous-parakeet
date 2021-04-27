@@ -1,0 +1,45 @@
+.home {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.home-content-container {
+    display: flex;
+    img {
+        border-radius: 50%;
+        min-width: 300px;
+        max-width: 300px;
+        box-shadow: inset 0px 0px 0px 9px rgba(255,255,255,.3);
+        animation: morph 8s ease-in-out infinite 1s;
+    }
+    div {
+        margin: 50px;
+    }
+}
+
+.social-icons {
+    img {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+@keyframes morph {
+    0% {
+        border-radius: 50%;
+    }
+    25% {
+       border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;     
+   }
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+   }
+    75% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+   }
+   100% {
+       border-radius: 50%;
+   }
+}

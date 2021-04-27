@@ -1,0 +1,50 @@
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: "Mulish";
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 0.5px;
+	word-wrap: break-word;
+	font-weight: 400;
+}
+
+h1 {
+	font-weight:700;
+	line-height: 1.2;
+	font-family: "Montserrat";
+	color: #000;
+    font-size: 45px
+}
+
+h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+  
+nav {
+    list-style-type: none;
+    padding-left: 0;
+}
+ ul {
+    list-style-type: none;
+    padding-left: 0;
+ }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display: flex;
+}
+
+
+.wrapper {
+      max-width: 1600px;
+      margin: 0 auto;
+      width: 90%
+}
