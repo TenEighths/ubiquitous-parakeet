@@ -13,14 +13,15 @@
         max-width: 300px;
         box-shadow: inset 0px 0px 0px 9px rgba(255,255,255,.3);
         animation: morph 8s ease-in-out infinite 1s;
+
     }
     div {
-        margin: 50px;
+        height: auto;
+        padding-left: 40px;
     }
 }
 
-
-    .svg {
+.svg {
         width: 17px;
         height: 17px;
     }

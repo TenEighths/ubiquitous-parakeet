@@ -8,9 +8,14 @@
 }
 
 @media (max-width: 1010px) {
+    .home {
+        height: auto;
+
+    }
 
     .home-content-container {
         flex-direction: column;
+        padding-top: 150px;
     }
     .about-desc-container {
         flex-direction: column;
@@ -39,9 +44,6 @@
 @media (max-width: 725px) {
     .portfolio-img-list {
         grid-template-columns: 1fr;
-    }
-    .home-content-container {
-        padding-top: 300px;
     }
 
 }

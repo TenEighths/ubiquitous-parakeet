@@ -25,9 +25,9 @@
                     </div>
                     <div class="mobile-right">
                         <ul>
-                            <li><a href="#home"><img class="svg" src="./styles/assests/img/home-run.svg" alt=""></a></li>
-                            <li><a href="#about"><img class="svg" src="./styles/assests/img/avatar.svg" alt=""></a></li>
-                            <li><a href="#portfolio"><img class="svg" src="./styles/assests/img/briefcase.svg" alt=""></a></li>
+                            <li><a href="#home"><img class="svg" src="./styles/assests/img/home-run.svg" alt="an icon in the shape of a house"></a></li>
+                            <li><a href="#about"><img class="svg" src="./styles/assests/img/avatar.svg" alt="an icon in the shape of a person"></a></li>
+                            <li><a href="#portfolio"><img class="svg" src="./styles/assests/img/briefcase.svg" alt="an icon in the shape of a briefcase"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -42,6 +42,9 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="https://twitter.com/TenEighths"><img class="svg" src="./styles/assests/social/twitter.svg" alt="the twitter logo" /></a></li>
+                        <li><a href="https://www.instagram.com/teneighths84/"><img class="svg" src="./styles/assests/social/instagram.svg" alt="the instagram logo" /></a></li>
+                        <li><a href="https://github.com/TenEighths"><img class="svg" src="./styles/assests/social/github.svg" alt="the github logo" /></a></li>
                     </nav>
 
                 </div>
@@ -49,35 +52,50 @@
             <div class="content-display wrapper">
     
                 <!-- Home -->
-                <div class="home">
+                <div class="home" id="home">
                     <div class="home-content-container">
-                        <img src="./styles/assests/img/placeholder.jpg" alt="placeholder image">
+                        <img src="./styles/assests/img/jacket-sun.jpg" alt="An image of Kevin wearing a jacket with the sun and blue sky behind him">
                         <div class="home-desc">
                             <h2>Home</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sunt voluptates laudantium quod itaque rem rerum corrupti recusandae sint. Enim consequatur autem minus tempora! Voluptates eligendi earum temporibus accusamus sed.</p>
+                            <p>After feeling lost about my future, an encounter with a stranger inspired me to become a web developer. With a passion for critical thinking and problem solving, I fell in love with the field and aspire to continue growing and learning alongside the ever changing needs of the industry.</p>
+                            <p>Having spent my life surrounded by technology I naturally developed a love of video games and movies, and I carried that passion into my adulthood. I channel my creativity through cooking and preparing meals for the people I love.</p>
                         </div>
                     </div>
                 </div>
     
                 <!-- About -->
-                <div class="about">
+                <div class="about" id="about">
                     <div class="img-container wrapper">
-                        <img src="./styles/assests/img/palceholder-large.jpg" alt="">
+                        <div class="img-overlay"></div>
+                        <img src="./styles/assests/img/city.jpg" alt="">
                     </div>
                     <div class="about-desc-container">
                         <div class="about-left">
-                            <h3>About</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam officiis culpa facere nisi alias delectus inventore minima, molestiae labore aliquam perferendis cum ipsa, incidunt quasi optio, reprehenderit ipsam at laudantium?</p>
+                            <h3>Education</h3>
+                            <p>I started my web development journey at Camosun College in Victoria BC, where I learned the fundamentals of web design and computer science. After graduating from the Computer Systems Technology diploma program, I furthered my education with Juno College's Web Development Bootcamp. At Juno I learned the nuances of design and front-end development, with a focus on inclusivity and accessibility.
+                            </p>
                         </div>
                         <div class="about-right">
-                            <h3>About right</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iusto voluptas sequi quo facere omnis earum molestiae dignissimos illum quos explicabo aperiam nostrum, facilis voluptatum, quod aut, quis ex odio.</p>
+                            <h3>Skills</h3>
+                            <ul>
+                                <div class="skills-left">
+                                    <li><i class="fas fa-code-branch fa-3x" title="Git"></i></li>
+                                    <li><i class="fab fa-js-square fa-3x" title="Javascript"></i></li>
+                                    <li><i class="fab fa-react fa-3x" title="React.js"></i></li>
+                                </div>
+                                <div class="skills-right">
+                                    <li><i class="fas fa-file-code fa-3x" title="HTML5"></i></li>
+                                    <li><i class="fab fa-css3-alt fa-3x" title="CSS3"></i></li>
+                                    <li><i class="fab fa-sass fa-3x" title="SASS"></i></li>
+                                </div>
+                                
+                            </ul>
                         </div>
                     </div>
                 </div>
     
                 <!-- Portfolio -->
-                <div class="portfolio">
+                <div class="portfolio" id="portfolio">
                     <div class="portfolio-nav">
                         <nav>
                             <li>Portfolio</li>
@@ -92,31 +110,40 @@
                         <!-- gonna do grid -->
                         <ul class="portfolio-img-list">
                             <li class="grid-item">
-                                <img src="./styles/assests/img/placeholder.jpg" alt="">
+                                <img src="./styles/assests/img/MDSE.PNG" alt="A screenshot of the Movie Database Search Engine project">
+                                <a href="https://movie-database-search-engine.github.io/sam-beaulieu-kevin-turner-project-2/">
+                                    <div>
+                                        <h3>The Movie Database Search Engine</h3>
+                                        <p>Using the Movie Database API, this is an IMDB lite page allowing users to search for their favorite movies, TV shows, and cast members</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="grid-item">
+                                <img src="./styles/assests/img/SM.PNG" alt="A screenshot of the Summer Movies project">
+                                <a href="https://compassionate-gates-9c348a.netlify.app/">
                                 <div>
-                                    <h3>Title</h3>
-                                    <p>A description of the project</p>
+                                        <h3>Summer Movies</h3>
+                                        <p>A React app that allows users to select up to 10 movies from the summer of a chosen year and rank them based on gross revenue</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="grid-item">
+                                <img src="./styles/assests/img/SB.PNG" alt="A screenshot of the Simple Blog project">
+                                <a href="https://awesome-kilby-4fea5a.netlify.app/">
+                                    <div>
+                                        <h3>Simple Blog</h3>
+                                        <p>Using React and Firebase, a simple blog that allows users to post comment, and delete blog posts</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="grid-item">
+                                <img src="./styles/assests/img/LCP.PNG" alt="A screenshot of the Lekwungen Community Portal Project">
+                                <div>
+                                    <h3>Lekwungen Community Portal</h3>
+                                    <p>Using WordPress technologies a portal for the Songhees Nation and the Lekwungen Community allowing members to create and manage their family trees as well as preserve their langauge</p>
                                 </div>
                             </li>
-                            <li class="grid-item"><img src="./styles/assests/img/placeholder.jpg" alt="">
-                                <div>
-                                    <h3>Title</h3>
-                                    <p>A description of the project</p>
-                                </div>
-                            </li>
-                            <li class="grid-item"><img src="./styles/assests/img/placeholder.jpg" alt="">
-                                <div>
-                                    <h3>Title</h3>
-                                    <p>A description of the project</p>
-                                </div>
-                            </li>
-                            <li class="grid-item"><img src="./styles/assests/img/placeholder.jpg" alt="">
-                                <div>
-                                    <h3>Title</h3>
-                                    <p>A description of the project</p>
-                                </div>
-                            </li>
-                            <li class="grid-item-5 grid-item"><p>there will be something here</p>
+                            <li class="grid-item-5 grid-item"><p>More to come!</p>
                             </li>
                         </ul>
                     </div>
@@ -132,9 +159,9 @@
             <p>Developed by Kevin Turner</p>
             <div class="social-icons">
                 <ul>
-                    <li><a href="#"><img class="svg" src="./styles/assests/social/twitter.svg" alt="" /></a></li>
-                    <li><a href="#"><img class="svg" src="./styles/assests/social/instagram.svg" alt="" /></a></li>
-                    <li><a href="#"><img class="svg" src="./styles/assests/social/github.svg" alt="" /></a></li>
+                    <li><a href="https://twitter.com/TenEighths"><img class="svg" src="./styles/assests/social/twitter.svg" alt="the twitter logo" /></a></li>
+                    <li><a href="https://www.instagram.com/teneighths84/"><img class="svg" src="./styles/assests/social/instagram.svg" alt="the instagram logo" /></a></li>
+                    <li><a href="https://github.com/TenEighths"><img class="svg" src="./styles/assests/social/github.svg" alt="the github logo" /></a></li>
                 </ul>
             </div>  
         </div>
