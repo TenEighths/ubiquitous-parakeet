@@ -22,12 +22,9 @@
 .portfolio-img-list {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 100%;
     grid-gap: 30px;
     grid-auto-columns: 100px;
 }
-
-
 
 .portfolio-img-list {
     li {
@@ -39,9 +36,35 @@
     }
 }
 
-.grid-item-5 {
-    grid-column: 2 / -1;
-    background-color: lightgray;
+
+.grid-item {
+    position: relative;
+    div {
+        position: absolute;
+        top: 0;
+        background-color: black;
+        color: white;
+        height: 100%;
+        padding: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+    }
 }
 
+.grid-item div:hover,
+.grid-item div:focus,
+.grid-item div:active
+ {
+    opacity: .5;
+}
+
+
+.grid-item-5 {
+    grid-column: 2 / -1;
+    background-image: linear-gradient(to right, lightgray , white);
+}
 
