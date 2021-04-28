@@ -2,7 +2,21 @@
     padding-bottom: 200px;
 }
 .img-container {
+    position: relative;
+    .img-overlay {
+        position: absolute;
+        top: 0;
+        
+        background-color: black;
+        height: 98%;
+        width: 100%;
+        
+
+        opacity: 0.2;
+        z-index: 10;
+    }
     img {
+        box-shadow: 15px 15px lightgray;
         width: 100%;
     }
 }
@@ -19,5 +33,16 @@
 .about-right {
     width: 44%;
     margin: 2%;
+    text-align: center;
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: start;
+        div {
+            li {
+                padding-bottom: 20px;
+            }
+        }
+    }
 
 }
