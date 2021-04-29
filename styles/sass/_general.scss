@@ -13,6 +13,16 @@ body {
 	font-weight: 400;
 }
 
+.light {
+    background: url("./assests/double-bubble-outline/double-bubble-outline.png");
+}
+
+.dark {
+    background: url("./assests/double-bubble-dark/double-bubble-dark.png");
+    color: white;
+    background-repeat: repeat;
+}
+
 h1 {
 	font-weight:700;
 	line-height: 1.2;
