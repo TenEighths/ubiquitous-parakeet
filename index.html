@@ -14,41 +14,46 @@
 </head>
 <body>
 
-    <main>
+    
+                <!-- Mobile Menu -->
+                <div class="mobile-menu">
+                    <div class="mobile-menu-container">
+                        <div class="mobile-left">
+                            <h3>Kevin Turner</h3>
+                        </div>
+                        <div class="mobile-right">
+                            <ul>
+                                <li><a href="#home"><img class="svg" src="./styles/assests/img/home-run.svg" alt="an icon in the shape of a house"></a></li>
+                                <li><a href="#about"><img class="svg" src="./styles/assests/img/avatar.svg" alt="an icon in the shape of a person"></a></li>
+                                <li><a href="#portfolio"><img class="svg" src="./styles/assests/img/briefcase.svg" alt="an icon in the shape of a briefcase"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <!-- Main menu -->
+                <div class="main-menu">
+                    <label class="switch wrapper">
+                        <input type="checkbox" class="checkbox-check">
+                        <span class="slider round"></span>
+                    </label>
+                        <div class="menu-container">
+                        <h1>Kevin Turner</h1>
+                        <nav class="nav-menu">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="https://twitter.com/TenEighths"><img class="svg" src="./styles/assests/social/twitter.svg" alt="the twitter logo" /></a></li>
+                            <li><a href="https://www.instagram.com/teneighths84/"><img class="svg" src="./styles/assests/social/instagram.svg" alt="the instagram logo" /></a></li>
+                            <li><a href="https://github.com/TenEighths"><img class="svg" src="./styles/assests/social/github.svg" alt="the github logo" /></a></li>
+                            <li><a href="mailto: kevin.turner84@gmail.com"><img class="svg" src="./styles/assests/social/mail.svg" alt="email icon" /></a></li>
+                        </nav>
+    
+                    </div>
+                </div>
+    <main class="light">
         <div class="main-page">
-
-            <!-- Mobile Menu -->
-            <div class="mobile-menu">
-                <div class="mobile-menu-container">
-                    <div class="mobile-left">
-                        <h3>Kevin Turner</h3>
-                    </div>
-                    <div class="mobile-right">
-                        <ul>
-                            <li><a href="#home"><img class="svg" src="./styles/assests/img/home-run.svg" alt="an icon in the shape of a house"></a></li>
-                            <li><a href="#about"><img class="svg" src="./styles/assests/img/avatar.svg" alt="an icon in the shape of a person"></a></li>
-                            <li><a href="#portfolio"><img class="svg" src="./styles/assests/img/briefcase.svg" alt="an icon in the shape of a briefcase"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Main menu -->
-            <div class="main-menu">
-                    <div class="menu-container">
-                    <h1>Kevin Turner</h1>
-                    <nav class="nav-menu">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="https://twitter.com/TenEighths"><img class="svg" src="./styles/assests/social/twitter.svg" alt="the twitter logo" /></a></li>
-                        <li><a href="https://www.instagram.com/teneighths84/"><img class="svg" src="./styles/assests/social/instagram.svg" alt="the instagram logo" /></a></li>
-                        <li><a href="https://github.com/TenEighths"><img class="svg" src="./styles/assests/social/github.svg" alt="the github logo" /></a></li>
-                    </nav>
-
-                </div>
-            </div>
             <div class="content-display wrapper">
     
                 <!-- Home -->
@@ -154,7 +159,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="grid-item"><p>More to come!</p>
+                            <li class="grid-item grid-item-last"><p>More to come!</p>
                             </li>
                         </ul>
                     </div>
@@ -167,16 +172,41 @@
 
     <footer>
         <div class="footer">
-            <p>Developed by Kevin Turner</p>
+            <p>Where to find me</p>
             <div class="social-icons">
                 <ul>
                     <li><a href="https://twitter.com/TenEighths"><img class="svg" src="./styles/assests/social/twitter.svg" alt="the twitter logo" /></a></li>
                     <li><a href="https://www.instagram.com/teneighths84/"><img class="svg" src="./styles/assests/social/instagram.svg" alt="the instagram logo" /></a></li>
                     <li><a href="https://github.com/TenEighths"><img class="svg" src="./styles/assests/social/github.svg" alt="the github logo" /></a></li>
+                    <li><a href="mailto: kevin.turner84@gmail.com"><img class="svg" src="./styles/assests/social/mail.svg" alt="email icon" /></a></li>
                 </ul>
             </div>  
         </div>
     </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function() {
+
+    const ifChecked = function () {
+        if($('.checkbox-check').is(':checked')) {
+
+                $('main').addClass('dark');
+                $('main').removeClass('light');
+            } else {
+
+                $('main').removeClass('dark');
+                $('main').addClass('light');
+            } 
+    }
+    ifChecked();
+
+
+
+    $('.checkbox-check').change(function() {
+        ifChecked();   
+    });
+    });
+    </script>
 
 </body>
 </html>

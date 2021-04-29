@@ -250,6 +250,16 @@ body {
   font-weight: 400;
 }
 
+.light {
+  background: url("./assests/double-bubble-outline/double-bubble-outline.png");
+}
+
+.dark {
+  background: url("./assests/double-bubble-dark/double-bubble-dark.png");
+  color: white;
+  background-repeat: repeat;
+}
+
 h1 {
   font-weight: 700;
   line-height: 1.2;
@@ -303,9 +313,10 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-right: 2px solid lightgray;
+  border-right: 2px solid #aaa7a7;
   position: fixed;
   z-index: 10;
+  background: white;
 }
 
 .menu-container {
@@ -318,6 +329,70 @@ main {
 
 .nav-menu a:hover {
   text-decoration: underline;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+  margin: 10px 30px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #000000;
+          box-shadow: 0 0 1px #000000;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 17px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 .main-page {
@@ -527,12 +602,6 @@ main {
   grid-auto-columns: 100px;
 }
 
-.portfolio-img-list li {
-  -webkit-box-shadow: 15px 10px lightgray;
-          box-shadow: 15px 10px lightgray;
-  border-radius: 10%;
-}
-
 .portfolio-img-list li img {
   border-radius: 10%;
   width: 100%;
@@ -542,6 +611,10 @@ main {
 
 .grid-item {
   position: relative;
+  border: 1px solid black;
+  -webkit-box-shadow: 15px 10px lightgray;
+          box-shadow: 15px 10px lightgray;
+  border-radius: 10%;
 }
 
 .grid-item div {
@@ -569,10 +642,22 @@ main {
   word-wrap: normal;
 }
 
+.grid-item-last {
+  background: white;
+  text-align: center;
+}
+
 .grid-item div:hover,
 .grid-item div:focus,
 .grid-item div:active {
   opacity: 0.8;
+}
+
+.grid-item:active {
+  -webkit-transform: translate(15px, 10px);
+          transform: translate(15px, 10px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media (max-width: 1360px) {
