@@ -527,10 +527,16 @@ main {
   grid-auto-columns: 100px;
 }
 
+.portfolio-img-list li {
+  -webkit-box-shadow: 15px 10px lightgray;
+          box-shadow: 15px 10px lightgray;
+  border-radius: 10%;
+}
+
 .portfolio-img-list li img {
+  border-radius: 10%;
   width: 100%;
   height: 100%;
-  border-radius: 10%;
   background-size: cover;
 }
 

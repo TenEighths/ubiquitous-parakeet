@@ -30,10 +30,15 @@
 }
 
 .portfolio-img-list {
+    li {
+        box-shadow: 15px 10px lightgray;
+        border-radius: 10%;
+    }
     li img {
+        // border: 1px solid black;
+        border-radius: 10%; 
         width: 100%;
         height: 100%;  
-        border-radius: 10%; 
         background-size: cover;
     }
 }
