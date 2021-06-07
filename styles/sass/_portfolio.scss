@@ -63,8 +63,14 @@
     }
 }
 
-.grid-item-last {
+.grid-item-light {
     background: white;
+    text-align: center;
+}
+
+.grid-item-dark {
+    background: rgb(39, 39, 39);
+    color: white;
     text-align: center;
 }
 

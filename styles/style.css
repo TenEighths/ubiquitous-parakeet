@@ -235,10 +235,13 @@ html {
   overflow: hidden;
 }
 
-html {
-  font-size: 125%;
+* {
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-size: 125%;
 }
 
 body {
@@ -642,8 +645,14 @@ input:checked + .slider:before {
   word-wrap: normal;
 }
 
-.grid-item-last {
+.grid-item-light {
   background: white;
+  text-align: center;
+}
+
+.grid-item-dark {
+  background: #272727;
+  color: white;
   text-align: center;
 }
 
@@ -714,16 +723,11 @@ input:checked + .slider:before {
 footer {
   background-color: lightgray;
   text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-footer div {
-  padding: 1px;
+  padding: 5px;
 }
 
 .social-icons {
-  padding: 0;
+  padding: 5px;
 }
 
 .social-icons ul {
