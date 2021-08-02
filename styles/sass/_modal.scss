@@ -1,0 +1,19 @@
+/* 
+TODO: The height difference between the sections is affecting the position of the footer, need to work with the existing CSS from before to correct the extra white space that occurs while Portfolio is active, due to the About section being larger, there is a scroll bar while Home is active, again due to About being the largest section (height) 
+*/
+
+
+.modal-section {
+    opacity: 0.1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+.modal-section.active {
+    opacity: 1;
+    position: relative;
+}
