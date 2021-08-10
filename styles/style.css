@@ -415,7 +415,7 @@ input:checked + .slider:before {
 TODO: The height difference between the sections is affecting the position of the footer, need to work with the existing CSS from before to correct the extra white space that occurs while Portfolio is active, due to the About section being larger, there is a scroll bar while Home is active, again due to About being the largest section (height) 
 */
 .modal-section {
-  opacity: 0.1;
+  opacity: 0;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -534,7 +534,7 @@ TODO: The height difference between the sections is affecting the position of th
 }
 
 .about {
-  padding-bottom: 200px;
+  padding-top: 40px;
 }
 
 .img-container {
@@ -590,6 +590,7 @@ TODO: The height difference between the sections is affecting the position of th
 
 .portfolio {
   margin: 2%;
+  padding-bottom: 230px;
 }
 
 .portfolio p {
