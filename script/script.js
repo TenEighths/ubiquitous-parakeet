@@ -32,21 +32,22 @@ const darkmodeChecked = function () {
 const menu = function () {
 
     let list = $('.main-menu .menu-container .nav-menu ul li');
+    let mainContent = $('.content-display');
+    let mainSection = $('.modal-section');
 
     //on click of element in menu add the active class and remove active class from currently active menu item, unless already active
     //INCOMPLETE
     list.on('click', function() {
         let element = $(this);
         let href = element.find('a').attr('href');
-        let mainContent = $('.main-page');
-        let mainSection = $('.modal-section');
 
-        
         if(!element.hasClass('active')) {
             list.removeClass('active');
             element.addClass('active');
             mainSection.removeClass('active');
+            console.log(mainSection);
             mainContent.find(href).addClass('active');
+            console.log(mainContent.find(href));
         }
     })
 }
