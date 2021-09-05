@@ -9,11 +9,12 @@ TODO: The height difference between the sections is affecting the position of th
     top: 0;
     bottom: 0;
     right: 0;
-    left: 0;
+    left: -10000px;
     width: 100%;
 }
 
 .modal-section.active {
     opacity: 1;
+    left: 0;
     position: relative;
 }

@@ -31,16 +31,22 @@ const darkmodeChecked = function () {
 //on click of menu element add the active class to each menu element to display on page
 const menu = function () {
 
-    let list = $('.nav-menu li');
+    let list = $('.main-menu .menu-container .nav-menu ul li');
 
     //on click of element in menu add the active class and remove active class from currently active menu item, unless already active
     //INCOMPLETE
     list.on('click', function() {
         let element = $(this);
         let href = element.find('a').attr('href');
+        let mainContent = $('.main-page');
+        let mainSection = $('.modal-section');
 
+        
         if(!element.hasClass('active')) {
-            console.log(element);
+            list.removeClass('active');
+            element.addClass('active');
+            mainSection.removeClass('active');
+            mainContent.find(href).addClass('active');
         }
     })
 }
