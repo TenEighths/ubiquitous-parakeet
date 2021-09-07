@@ -5,6 +5,7 @@
     .grid-item-5 {
         display: none;
     }
+
 }
 
 @media (max-width: 1010px) {
@@ -12,10 +13,15 @@
         height: auto;
 
     }
-
     .home-content-container {
         flex-direction: column;
-        padding-top: 150px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .about {
+        padding-top: 100px;
+        padding-bottom: 25px;
     }
     .about-desc-container {
         flex-direction: column;
@@ -26,6 +32,12 @@
             width: auto;
         }
     }
+
+    .portfolio {
+        padding-top: 75px;
+        padding-bottom: 50px;
+    }
+
     .content-display {
         margin-left: auto;
     }
@@ -38,12 +50,12 @@
         display: block;
     }
 
-    
 }
 
 @media (max-width: 725px) {
     .portfolio-img-list {
         grid-template-columns: 1fr;
     }
+
 
 }
