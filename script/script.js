@@ -31,12 +31,11 @@ const darkmodeChecked = function () {
 //on click of menu element add the active class to each menu element to display on page
 const menu = function () {
 
-    let list = $('.main-menu .menu-container .nav-menu ul li');
+    let list = $('.main-menu .menu-container .nav-menu ul li, .mobile-menu .mobile-menu-container .mobile-right ul li');
     let mainContent = $('.content-display');
     let mainSection = $('.modal-section');
 
     //on click of element in menu add the active class and remove active class from currently active menu item, unless already active
-    //INCOMPLETE
     list.on('click', function() {
         let element = $(this);
         let href = element.find('a').attr('href');

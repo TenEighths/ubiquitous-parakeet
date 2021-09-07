@@ -730,7 +730,12 @@ TODO: The height difference between the sections is affecting the position of th
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 150px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .about {
+    padding-top: 100px;
+    padding-bottom: 25px;
   }
   .about-desc-container {
     -webkit-box-orient: vertical;
@@ -743,6 +748,10 @@ TODO: The height difference between the sections is affecting the position of th
   }
   .about-desc-container .about-left {
     width: auto;
+  }
+  .portfolio {
+    padding-top: 75px;
+    padding-bottom: 50px;
   }
   .content-display {
     margin-left: auto;
